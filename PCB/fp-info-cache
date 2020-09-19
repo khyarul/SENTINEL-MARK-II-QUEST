@@ -1,4 +1,4 @@
-16947475444070741
+16950684248555659
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -50295,12 +50295,26 @@ MP2307
 9
 9
 Kicad Library
-OLED I2C 0.96' 128x64
+OLED_I2C_128x64
 
 
 0
 4
 4
+Kicad Library
+Push_button_silicon_mute
+Light Touch Switch, https://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000CE7.pdf
+
+0
+2
+2
+Kicad Library
+switch_slide_2.54
+Through hole straight pin header, 1x03, 2.54mm pitch, single row
+Through hole pin header THT 1x03 2.54mm single row
+0
+3
+3
 LED_SMD
 LED-APA102-2020
 http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf

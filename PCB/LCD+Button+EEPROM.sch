@@ -21,7 +21,7 @@ AR Path="/5F727D85" Ref="SW?"  Part="1"
 AR Path="/5F7200D9/5F727D85" Ref="RESET1"  Part="1" 
 F 0 "RESET1" H 5650 4000 50  0000 R CNN
 F 1 "RESET" H 5875 3950 50  0001 R CNN
-F 2 "" H 5525 4050 50  0001 C CNN
+F 2 "Kicad Library:Push_button_silicon_mute" H 5525 4050 50  0001 C CNN
 F 3 "~" H 5525 4050 50  0001 C CNN
 	1    5525 3850
 	1    0    0    -1  
@@ -34,7 +34,7 @@ AR Path="/5F727D8B" Ref="SW?"  Part="1"
 AR Path="/5F7200D9/5F727D8B" Ref="SW1"  Part="1" 
 F 0 "SW1" H 5600 4250 50  0000 R CNN
 F 1 "B1" H 5725 4200 50  0001 R CNN
-F 2 "" H 5525 4300 50  0001 C CNN
+F 2 "Kicad Library:Push_button_silicon_mute" H 5525 4300 50  0001 C CNN
 F 3 "~" H 5525 4300 50  0001 C CNN
 	1    5525 4100
 	1    0    0    -1  
@@ -47,7 +47,7 @@ AR Path="/5F727D91" Ref="SW?"  Part="1"
 AR Path="/5F7200D9/5F727D91" Ref="SW2"  Part="1" 
 F 0 "SW2" H 5600 4500 50  0000 R CNN
 F 1 "B2" H 5725 4450 50  0001 R CNN
-F 2 "" H 5525 4550 50  0001 C CNN
+F 2 "Kicad Library:Push_button_silicon_mute" H 5525 4550 50  0001 C CNN
 F 3 "~" H 5525 4550 50  0001 C CNN
 	1    5525 4350
 	1    0    0    -1  
@@ -60,7 +60,7 @@ AR Path="/5F727D97" Ref="SW?"  Part="1"
 AR Path="/5F7200D9/5F727D97" Ref="SW3"  Part="1" 
 F 0 "SW3" H 5600 4750 50  0000 R CNN
 F 1 "B3" H 5725 4700 50  0001 R CNN
-F 2 "" H 5525 4800 50  0001 C CNN
+F 2 "Kicad Library:Push_button_silicon_mute" H 5525 4800 50  0001 C CNN
 F 3 "~" H 5525 4800 50  0001 C CNN
 	1    5525 4600
 	1    0    0    -1  
@@ -73,7 +73,7 @@ AR Path="/5F727D9D" Ref="SW?"  Part="1"
 AR Path="/5F7200D9/5F727D9D" Ref="SW4"  Part="1" 
 F 0 "SW4" H 4625 4175 50  0000 R CNN
 F 1 "B4" H 4725 4125 50  0001 R CNN
-F 2 "" H 4525 4225 50  0001 C CNN
+F 2 "Kicad Library:Push_button_silicon_mute" H 4525 4225 50  0001 C CNN
 F 3 "~" H 4525 4225 50  0001 C CNN
 	1    4525 4025
 	1    0    0    -1  
@@ -86,7 +86,7 @@ AR Path="/5F727DA3" Ref="SW?"  Part="1"
 AR Path="/5F7200D9/5F727DA3" Ref="SW5"  Part="1" 
 F 0 "SW5" H 4625 4425 50  0000 R CNN
 F 1 "B5" H 4725 4375 50  0001 R CNN
-F 2 "" H 4525 4475 50  0001 C CNN
+F 2 "Kicad Library:Push_button_silicon_mute" H 4525 4475 50  0001 C CNN
 F 3 "~" H 4525 4475 50  0001 C CNN
 	1    4525 4275
 	1    0    0    -1  
@@ -99,7 +99,7 @@ AR Path="/5F727DA9" Ref="SW?"  Part="1"
 AR Path="/5F7200D9/5F727DA9" Ref="SW6"  Part="1" 
 F 0 "SW6" H 4625 4675 50  0000 R CNN
 F 1 "B6" H 4725 4625 50  0001 R CNN
-F 2 "" H 4525 4725 50  0001 C CNN
+F 2 "Kicad Library:Push_button_silicon_mute" H 4525 4725 50  0001 C CNN
 F 3 "~" H 4525 4725 50  0001 C CNN
 	1    4525 4525
 	1    0    0    -1  
@@ -112,7 +112,7 @@ AR Path="/5F727DAF" Ref="J?"  Part="1"
 AR Path="/5F7200D9/5F727DAF" Ref="J3"  Part="1" 
 F 0 "J3" H 6605 3896 50  0000 L CNN
 F 1 "Conn_01x04" H 6605 3851 50  0001 L CNN
-F 2 "" H 6525 3950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6525 3950 50  0001 C CNN
 F 3 "~" H 6525 3950 50  0001 C CNN
 	1    6525 3950
 	1    0    0    -1  
@@ -143,7 +143,7 @@ U 1 1 5F72E5D5
 P 3600 4125
 F 0 "J2" H 3750 4125 50  0000 C CNN
 F 1 "Conn_01x03" H 3518 3891 50  0001 C CNN
-F 2 "" H 3600 4125 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3600 4125 50  0001 C CNN
 F 3 "~" H 3600 4125 50  0001 C CNN
 	1    3600 4125
 	-1   0    0    1   
@@ -166,8 +166,8 @@ U 1 1 5F734488
 P 5025 4600
 AR Path="/5F734488" Ref="#PWR?"  Part="1" 
 AR Path="/5F584CC7/5F734488" Ref="#PWR?"  Part="1" 
-AR Path="/5F7200D9/5F734488" Ref="#PWR03"  Part="1" 
-F 0 "#PWR03" H 5025 4350 50  0001 C CNN
+AR Path="/5F7200D9/5F734488" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 5025 4350 50  0001 C CNN
 F 1 "GND" H 5030 4427 50  0000 C CNN
 F 2 "" H 5025 4600 50  0001 C CNN
 F 3 "" H 5025 4600 50  0001 C CNN
@@ -260,7 +260,7 @@ AR Path="/5F647111" Ref="J?"  Part="1"
 AR Path="/5F7200D9/5F647111" Ref="J5"  Part="1" 
 F 0 "J5" V 5100 5175 50  0000 C CNN
 F 1 "Conn_01x04" V 5100 5175 50  0001 C CNN
-F 2 "" H 5000 5200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5000 5200 50  0001 C CNN
 F 3 "~" H 5000 5200 50  0001 C CNN
 	1    5000 5200
 	0    -1   -1   0   
@@ -271,8 +271,8 @@ U 1 1 5F647117
 P 4900 5675
 AR Path="/5F647117" Ref="#PWR?"  Part="1" 
 AR Path="/5F584CC7/5F647117" Ref="#PWR?"  Part="1" 
-AR Path="/5F7200D9/5F647117" Ref="#PWR02"  Part="1" 
-F 0 "#PWR02" H 4900 5425 50  0001 C CNN
+AR Path="/5F7200D9/5F647117" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 4900 5425 50  0001 C CNN
 F 1 "GND" H 4905 5502 50  0000 C CNN
 F 2 "" H 4900 5675 50  0001 C CNN
 F 3 "" H 4900 5675 50  0001 C CNN
@@ -293,7 +293,7 @@ U 1 1 5F64A1B9
 P 4550 5200
 F 0 "J4" V 4650 5200 50  0000 C CNN
 F 1 "Conn_01x03" H 4468 4966 50  0001 C CNN
-F 2 "" H 4550 5200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4550 5200 50  0001 C CNN
 F 3 "~" H 4550 5200 50  0001 C CNN
 	1    4550 5200
 	0    -1   -1   0   
@@ -312,7 +312,7 @@ AR Path="/5F64BF4F" Ref="J?"  Part="1"
 AR Path="/5F7200D9/5F64BF4F" Ref="J6"  Part="1" 
 F 0 "J6" V 5650 5125 50  0000 L CNN
 F 1 "Conn_01x04" H 5630 5101 50  0001 L CNN
-F 2 "" H 5550 5200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5550 5200 50  0001 C CNN
 F 3 "~" H 5550 5200 50  0001 C CNN
 	1    5550 5200
 	0    -1   -1   0   
@@ -334,7 +334,7 @@ AR Path="/5F584CC7/5F6947D6" Ref="R?"  Part="1"
 AR Path="/5F7200D9/5F6947D6" Ref="R10"  Part="1" 
 F 0 "R10" H 5575 2650 50  0000 L CNN
 F 1 "2K2" V 5525 2550 50  0000 L CNN
-F 2 "" V 5455 2625 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5455 2625 50  0001 C CNN
 F 3 "~" H 5525 2625 50  0001 C CNN
 	1    5525 2625
 	1    0    0    -1  
@@ -348,7 +348,7 @@ AR Path="/5F584CC7/5F6947DC" Ref="R?"  Part="1"
 AR Path="/5F7200D9/5F6947DC" Ref="R11"  Part="1" 
 F 0 "R11" H 5850 2650 50  0000 L CNN
 F 1 "2K2" V 5800 2550 50  0000 L CNN
-F 2 "" V 5730 2625 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5730 2625 50  0001 C CNN
 F 3 "~" H 5800 2625 50  0001 C CNN
 	1    5800 2625
 	1    0    0    -1  
@@ -362,7 +362,7 @@ AR Path="/5F584CC7/5F69E4A9" Ref="C?"  Part="1"
 AR Path="/5F7200D9/5F69E4A9" Ref="C18"  Part="1" 
 F 0 "C18" H 4315 2971 50  0000 L CNN
 F 1 "100nF" H 4315 2880 50  0000 L CNN
-F 2 "" H 4238 2775 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4238 2775 50  0001 C CNN
 F 3 "~" H 4200 2925 50  0001 C CNN
 	1    4200 2925
 	1    0    0    -1  
@@ -487,7 +487,7 @@ AR Path="/5F700DAF" Ref="J?"  Part="1"
 AR Path="/5F7200D9/5F700DAF" Ref="LCD1"  Part="1" 
 F 0 "LCD1" V 3650 2775 50  0000 C CNN
 F 1 "LCD" V 3650 2775 50  0001 C CNN
-F 2 "" H 3550 2800 50  0001 C CNN
+F 2 "Kicad Library:OLED_I2C_128x64" H 3550 2800 50  0001 C CNN
 F 3 "~" H 3550 2800 50  0001 C CNN
 	1    3550 2800
 	0    -1   -1   0   
