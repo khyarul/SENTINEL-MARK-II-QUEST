@@ -309,7 +309,7 @@ U 1 1 5F6168FF
 P 3800 3600
 F 0 "S1" H 3800 3885 50  0000 C CNN
 F 1 "ON-OFF" H 3800 3794 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3800 3600 50  0001 C CNN
+F 2 "Kicad Library:switch_slide_2.54" H 3800 3600 50  0001 C CNN
 F 3 "~" H 3800 3600 50  0001 C CNN
 	1    3800 3600
 	1    0    0    -1  
