@@ -318,16 +318,16 @@ Wire Wire Line
 Connection ~ 7700 2400
 Wire Wire Line
 	7700 2400 7950 2400
-Text Notes 1250 3650 0    50   ~ 0
+Text Notes 1850 3650 0    50   ~ 0
 Typ. Cstray = 3pF\nCa(pF) = Cb(pF) = 2*CL(pF) - 2*Cstray(pF)\nCa = Cb = 2*20 - 2*3 = 34pF
 Wire Notes Line
-	1225 3400 2975 3400
+	1825 3400 3575 3400
 Wire Notes Line
-	2975 3400 2975 3675
+	3575 3400 3575 3675
 Wire Notes Line
-	2975 3675 1225 3675
+	3575 3675 1825 3675
 Wire Notes Line
-	1225 3675 1225 3400
+	1825 3675 1825 3400
 Text Label 7225 3450 2    50   ~ 0
 PWM_LED
 Text Label 7225 3550 2    50   ~ 0
@@ -851,8 +851,6 @@ F 3 "" H 4625 3550 50  0001 C CNN
 	1    4625 3550
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3000 3900 3000 4200
 Wire Wire Line
 	4425 3400 5000 3400
 Wire Wire Line

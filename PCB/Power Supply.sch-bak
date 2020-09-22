@@ -303,17 +303,6 @@ F 3 "" H 6600 4750 50  0001 C CNN
 	1    6600 4750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_SPDT S1
-U 1 1 5F6168FF
-P 3800 3600
-F 0 "S1" H 3800 3885 50  0000 C CNN
-F 1 "ON-OFF" H 3800 3794 50  0000 C CNN
-F 2 "Kicad Library:switch_slide_2.54" H 3800 3600 50  0001 C CNN
-F 3 "~" H 3800 3600 50  0001 C CNN
-	1    3800 3600
-	1    0    0    -1  
-$EndComp
 Text Label 4575 3700 0    50   ~ 0
 12V
 $Comp
@@ -620,4 +609,15 @@ Wire Notes Line
 	4850 3425 4700 3425
 Wire Notes Line
 	4700 2075 4700 3425
+$Comp
+L Switch:SW_SPDT S1
+U 1 1 5F6168FF
+P 3800 3600
+F 0 "S1" H 3800 3885 50  0000 C CNN
+F 1 "ON-OFF" H 3800 3794 50  0000 C CNN
+F 2 "Kicad Library:switch_slide_2.54" H 3800 3600 50  0001 C CNN
+F 3 "~" H 3800 3600 50  0001 C CNN
+	1    3800 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
