@@ -257,9 +257,9 @@ $EndComp
 Text Label 5000 5100 2    50   ~ 0
 DISC
 Text Label 6300 5400 0    50   ~ 0
-USBDP
+USBD-
 Text Label 6300 5300 0    50   ~ 0
-USBDM
+USBD+
 $Comp
 L Device:R R7
 U 1 1 5F6E923E
@@ -293,19 +293,6 @@ Wire Wire Line
 NoConn ~ 5500 2900
 Wire Wire Line
 	5675 1875 5800 1875
-$Comp
-L Connector_Generic:Conn_01x09 J?
-U 1 1 5F6E9314
-P 7425 3750
-AR Path="/5F584CC7/5F6E9314" Ref="J?"  Part="1" 
-AR Path="/5F6E9314" Ref="J9"  Part="1" 
-F 0 "J9" H 7505 3792 50  0000 L CNN
-F 1 "SENSOR" H 7505 3701 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Horizontal" H 7425 3750 50  0001 C CNN
-F 3 "~" H 7425 3750 50  0001 C CNN
-	1    7425 3750
-	1    0    0    -1  
-$EndComp
 Text Label 6300 4200 0    50   ~ 0
 PWM_LED
 Wire Wire Line
@@ -318,27 +305,27 @@ Wire Wire Line
 Connection ~ 7700 2400
 Wire Wire Line
 	7700 2400 7950 2400
-Text Notes 1250 3650 0    50   ~ 0
+Text Notes 1850 3650 0    50   ~ 0
 Typ. Cstray = 3pF\nCa(pF) = Cb(pF) = 2*CL(pF) - 2*Cstray(pF)\nCa = Cb = 2*20 - 2*3 = 34pF
 Wire Notes Line
-	1225 3400 2975 3400
+	1825 3400 3575 3400
 Wire Notes Line
-	2975 3400 2975 3675
+	3575 3400 3575 3675
 Wire Notes Line
-	2975 3675 1225 3675
+	3575 3675 1825 3675
 Wire Notes Line
-	1225 3675 1225 3400
-Text Label 7225 3450 2    50   ~ 0
+	1825 3675 1825 3400
+Text Label 7225 3850 2    50   ~ 0
 PWM_LED
-Text Label 7225 3550 2    50   ~ 0
+Text Label 7225 3750 2    50   ~ 0
 S1
 Text Label 7225 3650 2    50   ~ 0
 S2
-Text Label 7225 3750 2    50   ~ 0
+Text Label 7225 3550 2    50   ~ 0
 S3
-Text Label 7225 3850 2    50   ~ 0
+Text Label 7225 3450 2    50   ~ 0
 AIN1
-Text Label 7225 3950 2    50   ~ 0
+Text Label 7225 3350 2    50   ~ 0
 AIN2
 Text Label 6300 4300 0    50   ~ 0
 S1
@@ -421,9 +408,9 @@ Text Label 8750 2800 2    50   ~ 0
 5V
 Text Label 8750 2900 2    50   ~ 0
 3.3V
-Text Label 7225 3350 2    50   ~ 0
-5V
 Text Label 7225 4050 2    50   ~ 0
+5V
+Text Label 7225 3950 2    50   ~ 0
 3.3V
 $Comp
 L power:GND #PWR024
@@ -728,9 +715,9 @@ Text Label 8725 5650 2    50   ~ 0
 Text Label 8725 5775 2    50   ~ 0
 DISC
 Text Label 8725 5900 2    50   ~ 0
-USBDP
+USBD+
 Text Label 8725 5975 2    50   ~ 0
-USBDM
+USBD-
 Wire Wire Line
 	8725 5650 8850 5650
 Wire Wire Line
@@ -742,9 +729,9 @@ F0 "USB" 50
 F1 "USB.sch" 50
 F2 "DISC" I L 8850 5775 50 
 F3 "3.3V" I L 8850 5650 50 
-F4 "USBDP" I L 8850 5900 50 
-F5 "USBDM" O L 8850 5975 50 
-F6 "Vusb" O L 8850 5575 50 
+F4 "Vusb" O L 8850 5575 50 
+F5 "USBD+" I L 8850 5900 50 
+F6 "USBD-" O L 8850 5975 50 
 $EndSheet
 Wire Wire Line
 	8725 5775 8850 5775
@@ -798,19 +785,6 @@ F 3 "" H 4275 2175 50  0001 C CNN
 	1    4275 2175
 	1    0    0    -1  
 $EndComp
-$Comp
-L Jumper:Jumper_3_Bridged12 JP1
-U 1 1 5F70D219
-P 4275 1925
-AR Path="/5F70D219" Ref="JP1"  Part="1" 
-AR Path="/5F6BB528/5F70D219" Ref="JP?"  Part="1" 
-F 0 "JP1" V 4321 1991 50  0000 L CNN
-F 1 "BOOT0" V 4230 1991 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4275 1925 50  0001 C CNN
-F 3 "~" H 4275 1925 50  0001 C CNN
-	1    4275 1925
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
 	4275 1600 4275 1675
 Text Label 3700 1925 2    50   ~ 0
@@ -828,13 +802,13 @@ Wire Notes Line
 $Comp
 L Connector_Generic:Conn_01x04 J10
 U 1 1 5F6F5B24
-P 7425 4900
-F 0 "J10" H 7505 4892 50  0000 L CNN
-F 1 "External" H 7505 4801 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7425 4900 50  0001 C CNN
-F 3 "~" H 7425 4900 50  0001 C CNN
-	1    7425 4900
-	1    0    0    -1  
+P 7425 5000
+F 0 "J10" H 7505 4992 50  0000 L CNN
+F 1 "External" H 7505 4901 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 7425 5000 50  0001 C CNN
+F 3 "~" H 7425 5000 50  0001 C CNN
+	1    7425 5000
+	1    0    0    1   
 $EndComp
 Text Label 7225 5000 2    50   ~ 0
 5V
@@ -868,4 +842,30 @@ Wire Wire Line
 Connection ~ 4125 3550
 Wire Wire Line
 	4225 3550 4125 3550
+$Comp
+L Connector_Generic:Conn_01x09 J?
+U 1 1 5F6E9314
+P 7425 3750
+AR Path="/5F584CC7/5F6E9314" Ref="J?"  Part="1" 
+AR Path="/5F6E9314" Ref="J9"  Part="1" 
+F 0 "J9" H 7505 3792 50  0000 L CNN
+F 1 "SENSOR" H 7505 3701 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S9B-PH-K_1x09_P2.00mm_Horizontal" H 7425 3750 50  0001 C CNN
+F 3 "~" H 7425 3750 50  0001 C CNN
+	1    7425 3750
+	1    0    0    1   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Bridged12 JP1
+U 1 1 5F70D219
+P 4275 1925
+AR Path="/5F70D219" Ref="JP1"  Part="1" 
+AR Path="/5F6BB528/5F70D219" Ref="JP?"  Part="1" 
+F 0 "JP1" V 4321 1991 50  0000 L CNN
+F 1 "BOOT0" V 4230 1991 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4275 1925 50  0001 C CNN
+F 3 "~" H 4275 1925 50  0001 C CNN
+	1    4275 1925
+	0    1    -1   0   
+$EndComp
 $EndSCHEMATC

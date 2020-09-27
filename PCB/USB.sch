@@ -249,9 +249,9 @@ Wire Wire Line
 Wire Wire Line
 	6375 2800 6425 2800
 Text HLabel 4625 3750 0    50   Input ~ 0
-USBDP
+USBD+
 Text HLabel 4625 3850 0    50   Output ~ 0
-USBDM
+USBD-
 $Comp
 L Device:D_Schottky_ALT D5
 U 1 1 5F6E12D8
@@ -264,4 +264,8 @@ F 3 "~" H 6575 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6725 2800
+Text Label 6600 3750 0    50   ~ 0
+D+
+Text Label 6600 3850 0    50   ~ 0
+D-
 $EndSCHEMATC

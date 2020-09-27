@@ -104,58 +104,20 @@ F 3 "~" H 4525 4725 50  0001 C CNN
 	1    4525 4525
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 5F727DAF
-P 6525 3950
-AR Path="/5F727DAF" Ref="J?"  Part="1" 
-AR Path="/5F7200D9/5F727DAF" Ref="J3"  Part="1" 
-F 0 "J3" H 6605 3896 50  0000 L CNN
-F 1 "Conn_01x04" H 6605 3851 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6525 3950 50  0001 C CNN
-F 3 "~" H 6525 3950 50  0001 C CNN
-	1    6525 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5725 3850 6325 3850
 Wire Wire Line
 	5725 4100 5800 4100
 Wire Wire Line
 	5800 4100 5800 3950
 Wire Wire Line
-	5800 3950 6325 3950
-Wire Wire Line
 	5725 4350 5875 4350
 Wire Wire Line
 	5875 4350 5875 4050
-Wire Wire Line
-	5875 4050 6325 4050
 Wire Wire Line
 	5725 4600 5950 4600
 Wire Wire Line
 	5950 4600 5950 4150
 Wire Wire Line
-	5950 4150 6325 4150
-$Comp
-L Connector_Generic:Conn_01x03 J2
-U 1 1 5F72E5D5
-P 3600 4125
-F 0 "J2" H 3750 4125 50  0000 C CNN
-F 1 "Conn_01x03" H 3518 3891 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3600 4125 50  0001 C CNN
-F 3 "~" H 3600 4125 50  0001 C CNN
-	1    3600 4125
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4325 4025 3800 4025
-Wire Wire Line
-	3800 4125 4325 4125
-Wire Wire Line
 	4325 4125 4325 4275
-Wire Wire Line
-	3800 4225 4250 4225
 Wire Wire Line
 	4250 4225 4250 4525
 Wire Wire Line
@@ -255,75 +217,51 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 5F647111
-P 5000 5200
+P 4600 5175
 AR Path="/5F647111" Ref="J?"  Part="1" 
 AR Path="/5F7200D9/5F647111" Ref="J5"  Part="1" 
-F 0 "J5" V 5100 5175 50  0000 C CNN
-F 1 "Conn_01x04" V 5100 5175 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5000 5200 50  0001 C CNN
-F 3 "~" H 5000 5200 50  0001 C CNN
-	1    5000 5200
+F 0 "J5" V 4700 5150 50  0000 C CNN
+F 1 "Conn_01x04" V 4700 5150 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4600 5175 50  0001 C CNN
+F 3 "~" H 4600 5175 50  0001 C CNN
+	1    4600 5175
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5F647117
-P 4900 5675
+P 4500 5650
 AR Path="/5F647117" Ref="#PWR?"  Part="1" 
 AR Path="/5F584CC7/5F647117" Ref="#PWR?"  Part="1" 
 AR Path="/5F7200D9/5F647117" Ref="#PWR0102"  Part="1" 
-F 0 "#PWR0102" H 4900 5425 50  0001 C CNN
-F 1 "GND" H 4905 5502 50  0000 C CNN
-F 2 "" H 4900 5675 50  0001 C CNN
-F 3 "" H 4900 5675 50  0001 C CNN
-	1    4900 5675
+F 0 "#PWR0102" H 4500 5400 50  0001 C CNN
+F 1 "GND" H 4505 5477 50  0000 C CNN
+F 2 "" H 4500 5650 50  0001 C CNN
+F 3 "" H 4500 5650 50  0001 C CNN
+	1    4500 5650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 5400 4900 5675
+	4500 5375 4500 5650
 Text HLabel 7450 4450 2    50   Input ~ 0
 3.3V
 Text HLabel 7450 4350 2    50   Input ~ 0
 SCL
 Text HLabel 7450 4250 2    50   BiDi ~ 0
 SDA
-$Comp
-L Connector_Generic:Conn_01x03 J4
-U 1 1 5F64A1B9
-P 4550 5200
-F 0 "J4" V 4650 5200 50  0000 C CNN
-F 1 "Conn_01x03" H 4468 4966 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4550 5200 50  0001 C CNN
-F 3 "~" H 4550 5200 50  0001 C CNN
-	1    4550 5200
-	0    -1   -1   0   
-$EndComp
-Text Label 4650 5400 3    50   ~ 0
+Text Label 5225 5375 3    50   ~ 0
 SW4
-Text Label 4550 5400 3    50   ~ 0
+Text Label 5125 5375 3    50   ~ 0
 SW5
-Text Label 4450 5400 3    50   ~ 0
+Text Label 5025 5375 3    50   ~ 0
 SW6
-$Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 5F64BF4F
-P 5550 5200
-AR Path="/5F64BF4F" Ref="J?"  Part="1" 
-AR Path="/5F7200D9/5F64BF4F" Ref="J6"  Part="1" 
-F 0 "J6" V 5650 5125 50  0000 L CNN
-F 1 "Conn_01x04" H 5630 5101 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5550 5200 50  0001 C CNN
-F 3 "~" H 5550 5200 50  0001 C CNN
-	1    5550 5200
-	0    -1   -1   0   
-$EndComp
-Text Label 5450 5400 3    50   ~ 0
+Text Label 5325 5375 3    50   ~ 0
 RESET
-Text Label 5550 5400 3    50   ~ 0
+Text Label 5625 5375 3    50   ~ 0
 SW1
-Text Label 5650 5400 3    50   ~ 0
+Text Label 5525 5375 3    50   ~ 0
 SW2
-Text Label 5750 5400 3    50   ~ 0
+Text Label 5425 5375 3    50   ~ 0
 SW3
 $Comp
 L Device:R R?
@@ -473,11 +411,11 @@ Text Label 5875 2900 0    50   ~ 0
 SDA
 Text Label 5875 3000 0    50   ~ 0
 SCL
-Text Label 5000 5400 3    50   ~ 0
+Text Label 4600 5375 3    50   ~ 0
 3.3V
-Text Label 5100 5400 3    50   ~ 0
+Text Label 4700 5375 3    50   ~ 0
 SCL
-Text Label 5200 5400 3    50   ~ 0
+Text Label 4800 5375 3    50   ~ 0
 SDA
 $Comp
 L Connector_Generic:Conn_01x04 J?
@@ -514,14 +452,97 @@ Text Label 3650 3000 3    50   ~ 0
 SCL
 Text Label 3750 3000 3    50   ~ 0
 SDA
-Wire Notes Line
-	6725 3625 3375 3625
-Wire Notes Line
-	3375 3625 3375 4850
-Wire Notes Line
-	3375 4850 6725 4850
-Wire Notes Line
-	6725 4850 6725 3625
-Text Notes 3475 3800 0    79   ~ 16
+Text Notes 4000 3775 0    79   ~ 16
 BUTTON
+$Comp
+L Connector_Generic:Conn_01x07 J3
+U 1 1 5F6D5D8E
+P 5325 5175
+F 0 "J3" V 5289 4787 50  0000 R CNN
+F 1 "BUTTON" V 5198 4787 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 5325 5175 50  0001 C CNN
+F 3 "~" H 5325 5175 50  0001 C CNN
+	1    5325 5175
+	0    -1   -1   0   
+$EndComp
+Text Label 6425 4025 2    50   ~ 0
+SW4
+Text Label 6425 3925 2    50   ~ 0
+SW5
+Text Label 6425 3825 2    50   ~ 0
+SW6
+Text Label 6425 4125 2    50   ~ 0
+RESET
+Text Label 6425 4425 2    50   ~ 0
+SW1
+Text Label 6425 4325 2    50   ~ 0
+SW2
+Text Label 6425 4225 2    50   ~ 0
+SW3
+Wire Wire Line
+	5725 3850 5925 3850
+Wire Wire Line
+	5800 3950 5950 3950
+Wire Wire Line
+	5875 4050 5950 4050
+Wire Wire Line
+	4000 4025 4325 4025
+Wire Wire Line
+	4000 4125 4325 4125
+Wire Wire Line
+	4000 4225 4250 4225
+$Comp
+L Connector_Generic:Conn_01x07 J2
+U 1 1 5F6D9CC9
+P 6625 4125
+F 0 "J2" H 6650 3725 50  0000 R CNN
+F 1 "BUTTON" H 6500 3725 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 6625 4125 50  0001 C CNN
+F 3 "~" H 6625 4125 50  0001 C CNN
+	1    6625 4125
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	6725 3625 6725 4850
+Wire Notes Line
+	6725 4850 3925 4850
+Wire Notes Line
+	3925 4850 3925 3625
+Wire Notes Line
+	3925 3625 6725 3625
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5F7606BF
+P 5000 3800
+AR Path="/5F7606BF" Ref="J?"  Part="1" 
+AR Path="/5F7200D9/5F7606BF" Ref="J4"  Part="1" 
+F 0 "J4" V 5100 3775 50  0000 C CNN
+F 1 "Conn_01x04" V 5100 3775 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5000 3800 50  0001 C CNN
+F 3 "~" H 5000 3800 50  0001 C CNN
+	1    5000 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F7606C5
+P 4900 4275
+AR Path="/5F7606C5" Ref="#PWR?"  Part="1" 
+AR Path="/5F584CC7/5F7606C5" Ref="#PWR?"  Part="1" 
+AR Path="/5F7200D9/5F7606C5" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 4900 4025 50  0001 C CNN
+F 1 "GND" H 4905 4102 50  0000 C CNN
+F 2 "" H 4900 4275 50  0001 C CNN
+F 3 "" H 4900 4275 50  0001 C CNN
+	1    4900 4275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4000 4900 4275
+Text Label 5000 4000 3    50   ~ 0
+3.3V
+Text Label 5100 4000 3    50   ~ 0
+SCL
+Text Label 5200 4000 3    50   ~ 0
+SDA
 $EndSCHEMATC

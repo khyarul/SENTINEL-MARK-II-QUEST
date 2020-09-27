@@ -215,21 +215,19 @@ F 3 "" H 2575 3850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 NoConn ~ 3675 3850
-Text HLabel 4975 1775 0    50   Input ~ 0
+Text HLabel 5250 1675 0    50   Input ~ 0
 12V
 $Comp
 L Device:D_Schottky_ALT DM3
 U 1 1 5F626E2B
-P 5125 1775
-F 0 "DM3" H 5125 1600 50  0000 C CNN
-F 1 "SS34" H 5125 1675 50  0000 C CNN
-F 2 "Diode_SMD:D_SMA" H 5125 1775 50  0001 C CNN
-F 3 "~" H 5125 1775 50  0001 C CNN
-	1    5125 1775
+P 5400 1675
+F 0 "DM3" H 5400 1500 50  0000 C CNN
+F 1 "SS34" H 5400 1575 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 5400 1675 50  0001 C CNN
+F 3 "~" H 5400 1675 50  0001 C CNN
+	1    5400 1675
 	-1   0    0    1   
 $EndComp
-Text Label 5275 1775 0    50   ~ 0
-VS
 Text Label 2800 4050 2    50   ~ 0
 VS
 Text Label 4950 4050 0    50   ~ 0
@@ -449,107 +447,33 @@ VS
 Wire Wire Line
 	7075 3450 6925 3450
 Connection ~ 6925 3450
-Wire Wire Line
-	7175 3450 7325 3450
 Connection ~ 7325 3450
-$Comp
-L Transistor_FET:AO3401A QM3
-U 1 1 5F65134A
-P 5950 1575
-F 0 "QM3" V 6250 1575 50  0000 C CNN
-F 1 "AO3401" V 6175 1575 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6150 1500 50  0001 L CIN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 5950 1575 50  0001 L CNN
-	1    5950 1575
-	0    -1   -1   0   
-$EndComp
-Text HLabel 5750 1475 0    50   Input ~ 0
-12V
-$Comp
-L Device:R RM9
-U 1 1 5F65B5F1
-P 5950 1925
-F 0 "RM9" V 5850 1925 50  0000 C CNN
-F 1 "10K" V 5950 1925 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5880 1925 50  0001 C CNN
-F 3 "~" H 5950 1925 50  0001 C CNN
-	1    5950 1925
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:D_Zener_ALT DM4
-U 1 1 5F65D0CD
-P 6225 1625
-F 0 "DM4" V 6179 1704 50  0000 L CNN
-F 1 "5.1V" V 6270 1704 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" H 6225 1625 50  0001 C CNN
-F 3 "~" H 6225 1625 50  0001 C CNN
-	1    6225 1625
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6225 1775 5950 1775
-Connection ~ 5950 1775
-Wire Wire Line
-	6150 1475 6225 1475
-Text Label 6475 1475 0    50   ~ 0
-VS
-$Comp
-L power:GND #PWR010
-U 1 1 5F65EEAE
-P 5950 2075
-F 0 "#PWR010" H 5950 1825 50  0001 C CNN
-F 1 "GND" H 5950 1925 50  0000 C CNN
-F 2 "" H 5950 2075 50  0001 C CNN
-F 3 "" H 5950 2075 50  0001 C CNN
-	1    5950 2075
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:CP CM4
 U 1 1 5F66120F
-P 6775 1575
-F 0 "CM4" H 6890 1621 50  0000 L CNN
-F 1 "100uF" H 6890 1530 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 6813 1425 50  0001 C CNN
-F 3 "~" H 6775 1575 50  0001 C CNN
-	1    6775 1575
+P 5625 1825
+F 0 "CM4" H 5740 1871 50  0000 L CNN
+F 1 "100uF" H 5740 1780 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 5663 1675 50  0001 C CNN
+F 3 "~" H 5625 1825 50  0001 C CNN
+	1    5625 1825
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR012
 U 1 1 5F661B8F
-P 6775 1725
-F 0 "#PWR012" H 6775 1475 50  0001 C CNN
-F 1 "GND" H 6775 1575 50  0000 C CNN
-F 2 "" H 6775 1725 50  0001 C CNN
-F 3 "" H 6775 1725 50  0001 C CNN
-	1    6775 1725
+P 5625 1975
+F 0 "#PWR012" H 5625 1725 50  0001 C CNN
+F 1 "GND" H 5625 1825 50  0000 C CNN
+F 2 "" H 5625 1975 50  0001 C CNN
+F 3 "" H 5625 1975 50  0001 C CNN
+	1    5625 1975
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	4700 2275 4700 1225
-Wire Notes Line
-	5450 1225 5450 2275
-Text Notes 4725 1325 0    50   ~ 10
-A
-Text Notes 5475 1325 0    50   ~ 10
-B
-Text Notes 4725 1200 0    50   ~ 0
-Reverse polarity protection, choose one: A or B
-Wire Wire Line
-	6475 1475 6225 1475
-Connection ~ 6225 1475
-Wire Notes Line
-	6600 1225 6600 2275
-Wire Notes Line
-	6600 2275 4700 2275
-Wire Notes Line
-	4700 1225 6600 1225
-Text Label 6850 1425 0    50   ~ 0
+Text Label 5700 1675 0    50   ~ 0
 VS
 Wire Wire Line
-	6850 1425 6775 1425
+	5700 1675 5625 1675
 Text Label 2575 3650 2    50   ~ 0
 3.3V
 Text Label 5175 3650 0    50   ~ 0
@@ -572,17 +496,6 @@ Text HLabel 8425 3450 2    50   Input ~ 0
 DIRR
 Wire Wire Line
 	2550 2550 2850 2550
-$Comp
-L Connector_Generic:Conn_01x06 JM1
-U 1 1 5F6DB938
-P 3625 2525
-F 0 "JM1" V 3589 2137 50  0000 R CNN
-F 1 "M1" V 3498 2137 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3625 2525 50  0001 C CNN
-F 3 "~" H 3625 2525 50  0001 C CNN
-	1    3625 2525
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR0110
 U 1 1 5F6DE66B
@@ -609,17 +522,6 @@ Wire Wire Line
 Wire Wire Line
 	3925 2725 3925 3450
 $Comp
-L Connector_Generic:Conn_01x06 JM3
-U 1 1 5F6E7492
-P 7375 2525
-F 0 "JM3" V 7339 2805 50  0000 L CNN
-F 1 "M2" V 7248 2805 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7375 2525 50  0001 C CNN
-F 3 "~" H 7375 2525 50  0001 C CNN
-	1    7375 2525
-	0    1    -1   0   
-$EndComp
-$Comp
 L power:GND #PWR014
 U 1 1 5F6E7498
 P 7275 2875
@@ -640,10 +542,6 @@ Wire Wire Line
 	7475 2725 7475 2875
 Wire Wire Line
 	7575 2725 7575 2875
-Wire Wire Line
-	7175 2725 7175 3450
-Wire Wire Line
-	7075 2725 7075 3450
 Text HLabel 3525 2875 3    50   Output ~ 0
 ENC1_L
 Text HLabel 3425 2875 3    50   Output ~ 0
@@ -854,5 +752,36 @@ F 2 "Resistor_SMD:R_0805_2012Metric" V 2655 3450 50  0001 C CNN
 F 3 "~" H 2725 3450 50  0001 C CNN
 	1    2725 3450
 	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 1675 5625 1675
+Connection ~ 5625 1675
+Wire Wire Line
+	7175 3450 7325 3450
+Wire Wire Line
+	7175 2725 7175 3450
+Wire Wire Line
+	7075 2725 7075 3450
+$Comp
+L Connector_Generic:Conn_01x06 JM1
+U 1 1 5F6DB938
+P 3625 2525
+F 0 "JM1" V 3589 2137 50  0000 R CNN
+F 1 "M1" V 3498 2137 50  0000 R CNN
+F 2 "Connector_JST:JST_PH_S6B-PH-K_1x06_P2.00mm_Horizontal" H 3625 2525 50  0001 C CNN
+F 3 "~" H 3625 2525 50  0001 C CNN
+	1    3625 2525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 JM3
+U 1 1 5F6E7492
+P 7275 2525
+F 0 "JM3" V 7239 2805 50  0000 L CNN
+F 1 "M2" V 7148 2805 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S6B-PH-K_1x06_P2.00mm_Horizontal" H 7275 2525 50  0001 C CNN
+F 3 "~" H 7275 2525 50  0001 C CNN
+	1    7275 2525
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
