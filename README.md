@@ -4,6 +4,7 @@
 - Burn and update firmware via USB-OTG
 - BTS7960 motor driver 2 port + encoder
 - OLED I2C 128x64
-- 2 mini servo port
+- external eeprom
+- 2 port for mini servo
 - 1 port for extinguisher motor
 - external serial port
