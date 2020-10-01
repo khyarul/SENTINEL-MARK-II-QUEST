@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/50608159/94810004-a8f31e00-041d-11eb-9f57-4d7e2abcf03f.png" height="75" width="75"> ![image](https://user-images.githubusercontent.com/50608159/94809161-654be480-041c-11eb-80e4-5e7739659f5a.png) <img src="https://user-images.githubusercontent.com/50608159/94809387-bc51b980-041c-11eb-9e29-661003ecc64f.png" height="75" width="75">
+<img src="https://user-images.githubusercontent.com/50608159/94810004-a8f31e00-041d-11eb-9f57-4d7e2abcf03f.png" height="75" width="75"> ![image](https://user-images.githubusercontent.com/50608159/94809161-654be480-041c-11eb-80e4-5e7739659f5a.png) <img src="https://user-images.githubusercontent.com/50608159/94809387-bc51b980-041c-11eb-9e29-661003ecc64f.png" height="75" width="75"> <img src="https://user-images.githubusercontent.com/50608159/94810884-d55b6a00-041e-11eb-8843-62bc78b35c54.png" height="75" width="75">
 # SENTINEL MARK II (QUEST) - Line Follower Path Planning + Oled I2C User Interface
 - Arduino compatible based on Maple Mini board (STM32F103CBT6)
 - Burn and update firmware via USB-OTG
