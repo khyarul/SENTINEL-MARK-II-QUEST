@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 6
 Title "Motor Driver + Extinguisher"
 Date ""
 Rev ""
@@ -486,9 +486,9 @@ Text Label 2850 2550 0    50   ~ 0
 3.3V
 Text HLabel 2550 2550 0    50   Input ~ 0
 3.3V
-Text HLabel 2575 3450 0    50   Input ~ 0
-PWML
 Text HLabel 5175 3450 2    50   Input ~ 0
+PWML
+Text HLabel 2575 3450 0    50   Input ~ 0
 DIRL
 Text HLabel 5825 3450 0    50   Input ~ 0
 PWMR
@@ -546,9 +546,9 @@ Text HLabel 3525 2875 3    50   Output ~ 0
 ENC1_L
 Text HLabel 3425 2875 3    50   Output ~ 0
 ENC2_L
-Text HLabel 7475 2875 3    50   Output ~ 0
-ENC1_R
 Text HLabel 7575 2875 3    50   Output ~ 0
+ENC1_R
+Text HLabel 7475 2875 3    50   Output ~ 0
 ENC2_R
 Wire Notes Line
 	2275 2425 8725 2425
@@ -658,12 +658,12 @@ F 3 "~" H 4350 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3925 1750 4150 1750
+	3925 1750 4075 1750
 Wire Wire Line
 	4150 1750 4150 1850
 Connection ~ 3925 1750
 Wire Wire Line
-	3925 2050 4150 2050
+	3925 2050 4075 2050
 Wire Wire Line
 	4150 2050 4150 1950
 Connection ~ 3925 2050
@@ -784,4 +784,21 @@ F 3 "~" H 7275 2525 50  0001 C CNN
 	1    7275 2525
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Device:C CM6
+U 1 1 5F759601
+P 4075 1900
+F 0 "CM6" H 4025 1675 50  0000 L CNN
+F 1 "100nF" H 4025 1600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4113 1750 50  0001 C CNN
+F 3 "~" H 4075 1900 50  0001 C CNN
+	1    4075 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 4075 1750
+Wire Wire Line
+	4075 1750 4150 1750
+Connection ~ 4075 2050
+Wire Wire Line
+	4075 2050 4150 2050
 $EndSCHEMATC

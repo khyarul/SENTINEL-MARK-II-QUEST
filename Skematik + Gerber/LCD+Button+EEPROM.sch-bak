@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 6
 Title "LCD + BUTTON + EEPROM"
 Date ""
 Rev ""
@@ -18,8 +18,8 @@ L Switch:SW_Push SW?
 U 1 1 5F727D85
 P 5525 3850
 AR Path="/5F727D85" Ref="SW?"  Part="1" 
-AR Path="/5F7200D9/5F727D85" Ref="RESET1"  Part="1" 
-F 0 "RESET1" H 5650 4000 50  0000 R CNN
+AR Path="/5F7200D9/5F727D85" Ref="SW7"  Part="1" 
+F 0 "SW7" H 5650 4000 50  0000 R CNN
 F 1 "RESET" H 5875 3950 50  0001 R CNN
 F 2 "Kicad Library:Push_button_silicon_mute" H 5525 4050 50  0001 C CNN
 F 3 "~" H 5525 4050 50  0001 C CNN
@@ -518,7 +518,7 @@ AR Path="/5F7606BF" Ref="J?"  Part="1"
 AR Path="/5F7200D9/5F7606BF" Ref="J4"  Part="1" 
 F 0 "J4" V 5100 3775 50  0000 C CNN
 F 1 "Conn_01x04" V 5100 3775 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5000 3800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5000 3800 50  0001 C CNN
 F 3 "~" H 5000 3800 50  0001 C CNN
 	1    5000 3800
 	0    -1   -1   0   

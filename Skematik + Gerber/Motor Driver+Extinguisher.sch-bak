@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 6
 Title "Motor Driver + Extinguisher"
 Date ""
 Rev ""
@@ -447,8 +447,6 @@ VS
 Wire Wire Line
 	7075 3450 6925 3450
 Connection ~ 6925 3450
-Wire Wire Line
-	7175 3450 7325 3450
 Connection ~ 7325 3450
 $Comp
 L Device:CP CM4
@@ -488,9 +486,9 @@ Text Label 2850 2550 0    50   ~ 0
 3.3V
 Text HLabel 2550 2550 0    50   Input ~ 0
 3.3V
-Text HLabel 2575 3450 0    50   Input ~ 0
-PWML
 Text HLabel 5175 3450 2    50   Input ~ 0
+PWML
+Text HLabel 2575 3450 0    50   Input ~ 0
 DIRL
 Text HLabel 5825 3450 0    50   Input ~ 0
 PWMR
@@ -498,17 +496,6 @@ Text HLabel 8425 3450 2    50   Input ~ 0
 DIRR
 Wire Wire Line
 	2550 2550 2850 2550
-$Comp
-L Connector_Generic:Conn_01x06 JM1
-U 1 1 5F6DB938
-P 3625 2525
-F 0 "JM1" V 3589 2137 50  0000 R CNN
-F 1 "M1" V 3498 2137 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3625 2525 50  0001 C CNN
-F 3 "~" H 3625 2525 50  0001 C CNN
-	1    3625 2525
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR0110
 U 1 1 5F6DE66B
@@ -535,17 +522,6 @@ Wire Wire Line
 Wire Wire Line
 	3925 2725 3925 3450
 $Comp
-L Connector_Generic:Conn_01x06 JM3
-U 1 1 5F6E7492
-P 7375 2525
-F 0 "JM3" V 7339 2805 50  0000 L CNN
-F 1 "M2" V 7248 2805 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7375 2525 50  0001 C CNN
-F 3 "~" H 7375 2525 50  0001 C CNN
-	1    7375 2525
-	0    1    -1   0   
-$EndComp
-$Comp
 L power:GND #PWR014
 U 1 1 5F6E7498
 P 7275 2875
@@ -566,17 +542,13 @@ Wire Wire Line
 	7475 2725 7475 2875
 Wire Wire Line
 	7575 2725 7575 2875
-Wire Wire Line
-	7175 2725 7175 3450
-Wire Wire Line
-	7075 2725 7075 3450
 Text HLabel 3525 2875 3    50   Output ~ 0
 ENC1_L
 Text HLabel 3425 2875 3    50   Output ~ 0
 ENC2_L
-Text HLabel 7475 2875 3    50   Output ~ 0
-ENC1_R
 Text HLabel 7575 2875 3    50   Output ~ 0
+ENC1_R
+Text HLabel 7475 2875 3    50   Output ~ 0
 ENC2_R
 Wire Notes Line
 	2275 2425 8725 2425
@@ -686,12 +658,12 @@ F 3 "~" H 4350 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3925 1750 4150 1750
+	3925 1750 4075 1750
 Wire Wire Line
 	4150 1750 4150 1850
 Connection ~ 3925 1750
 Wire Wire Line
-	3925 2050 4150 2050
+	3925 2050 4075 2050
 Wire Wire Line
 	4150 2050 4150 1950
 Connection ~ 3925 2050
@@ -784,4 +756,49 @@ $EndComp
 Wire Wire Line
 	5550 1675 5625 1675
 Connection ~ 5625 1675
+Wire Wire Line
+	7175 3450 7325 3450
+Wire Wire Line
+	7175 2725 7175 3450
+Wire Wire Line
+	7075 2725 7075 3450
+$Comp
+L Connector_Generic:Conn_01x06 JM1
+U 1 1 5F6DB938
+P 3625 2525
+F 0 "JM1" V 3589 2137 50  0000 R CNN
+F 1 "M1" V 3498 2137 50  0000 R CNN
+F 2 "Connector_JST:JST_PH_S6B-PH-K_1x06_P2.00mm_Horizontal" H 3625 2525 50  0001 C CNN
+F 3 "~" H 3625 2525 50  0001 C CNN
+	1    3625 2525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 JM3
+U 1 1 5F6E7492
+P 7275 2525
+F 0 "JM3" V 7239 2805 50  0000 L CNN
+F 1 "M2" V 7148 2805 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S6B-PH-K_1x06_P2.00mm_Horizontal" H 7275 2525 50  0001 C CNN
+F 3 "~" H 7275 2525 50  0001 C CNN
+	1    7275 2525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C CM6
+U 1 1 5F759601
+P 4075 1900
+F 0 "CM6" H 4025 1675 50  0000 L CNN
+F 1 "100nF" H 4025 1600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4113 1750 50  0001 C CNN
+F 3 "~" H 4075 1900 50  0001 C CNN
+	1    4075 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 4075 1750
+Wire Wire Line
+	4075 1750 4150 1750
+Connection ~ 4075 2050
+Wire Wire Line
+	4075 2050 4150 2050
 $EndSCHEMATC
