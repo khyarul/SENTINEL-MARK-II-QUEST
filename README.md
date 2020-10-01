@@ -4,10 +4,10 @@
 - Burn and update firmware via USB-OTG
 - BTS7960 motor driver 2 port + encoder
 - OLED I2C SSD1306 128x64
-- external eeprom
-- 2 port for mini servo
-- 1 port for extinguisher motor
-- external serial port
+- external eeprom (24LCxxx)
+- 2 port for mini servo 5V
+- 1 port for extinguisher motor (adjustable voltage using PWM) 
+- external serial port (Serial1)
 
 ### Schematic & Gerber (made using Kicad)
 available in "Skematik + Gerber" folder:
