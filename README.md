@@ -9,11 +9,13 @@
 - 1 port for extinguisher motor (adjustable voltage using PWM) 
 - external serial port (Serial1)
 
-### Schematic & Gerber (made using Kicad)
-available in "Skematik + Gerber" folder:
+### Schematic (made using Kicad)
+available in "Schematic" folder:
 - SENTINEL Mark II - Quest.pro (Kicad Project)
-- Gebrer sysmin.zip (gerber)
-- gerber button lcd.zip (gerber)
+
+### Gerber:
+- Core + Driver motor: [Here](https://www.pcbway.com/project/shareproject/SENTINEL_mark_II__QUEST___Core___motor_driver_.html)
+- Button + LCD: [Here](https://www.pcbway.com/project/shareproject/SENTINEL_mark_II__QUEST___button___eeprom___lcd_.html)
 
 ### Board Preview
 ![SENTINEL Mark II - Quest front](https://user-images.githubusercontent.com/50608159/94805820-30895e80-0417-11eb-9224-c44c39aa6859.png)
