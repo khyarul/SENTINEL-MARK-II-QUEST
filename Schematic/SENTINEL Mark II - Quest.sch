@@ -900,4 +900,62 @@ Wire Notes Line
 	2600 1475 1825 1475
 Wire Notes Line
 	1825 1475 1825 650 
+Text Label 5000 4200 2    50   ~ 0
+BATT_VOLT
+Text Label 1325 1225 0    50   ~ 0
+BATT_VOLT
+$Comp
+L Device:R R1
+U 1 1 5F84C7AD
+P 1225 1075
+AR Path="/5F84C7AD" Ref="R1"  Part="1" 
+AR Path="/5F6BB528/5F84C7AD" Ref="R?"  Part="1" 
+F 0 "R1" V 1150 1075 50  0000 C CNN
+F 1 "10K" V 1225 1075 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1155 1075 50  0001 C CNN
+F 3 "~" H 1225 1075 50  0001 C CNN
+	1    1225 1075
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R34
+U 1 1 5F84D0B7
+P 1225 1375
+AR Path="/5F84D0B7" Ref="R34"  Part="1" 
+AR Path="/5F6BB528/5F84D0B7" Ref="R?"  Part="1" 
+F 0 "R34" V 1150 1375 50  0000 C CNN
+F 1 "2K2" V 1225 1375 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1155 1375 50  0001 C CNN
+F 3 "~" H 1225 1375 50  0001 C CNN
+	1    1225 1375
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5F84D4B8
+P 1225 1525
+AR Path="/5F84D4B8" Ref="#PWR0114"  Part="1" 
+AR Path="/5F584CC7/5F84D4B8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0114" H 1225 1275 50  0001 C CNN
+F 1 "GND" V 1225 1350 50  0000 C CNN
+F 2 "" H 1225 1525 50  0001 C CNN
+F 3 "" H 1225 1525 50  0001 C CNN
+	1    1225 1525
+	1    0    0    -1  
+$EndComp
+Connection ~ 1225 1225
+Wire Wire Line
+	1225 1225 1325 1225
+Text Label 1225 925  2    50   ~ 0
+12V
+Wire Notes Line
+	1800 650  1050 650 
+Wire Notes Line
+	1050 650  1050 1800
+Wire Notes Line
+	1050 1800 1800 1800
+Wire Notes Line
+	1800 1800 1800 650 
+Text Notes 1325 925  0    79   ~ 16
+Battery\nsensor
 $EndSCHEMATC
