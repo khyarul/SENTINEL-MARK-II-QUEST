@@ -18,6 +18,9 @@ available in "Schematic" folder:
 - Button + LCD: [Here](https://www.pcbway.com/project/shareproject/SENTINEL_mark_II__QUEST___button___eeprom___lcd_.html)
 
 ### Board Preview
-![SENTINEL Mark II - Quest front](https://user-images.githubusercontent.com/50608159/94805820-30895e80-0417-11eb-9224-c44c39aa6859.png)
-![SENTINEL Mark II - Quest](https://user-images.githubusercontent.com/50608159/94805824-32532200-0417-11eb-9155-993e9da4d6e9.png)
-![SENTINEL Mark II - Quest bott](https://user-images.githubusercontent.com/50608159/94805826-33844f00-0417-11eb-890d-b1fb4dd0e205.png)
+![SENTINEL Mark II - Quest  ](https://user-images.githubusercontent.com/50608159/94999278-937b2100-05e2-11eb-8e12-966e971380e2.png)
+![SENTINEL Mark II - Quest ](https://user-images.githubusercontent.com/50608159/94999280-95dd7b00-05e2-11eb-9201-359e159bcfed.png)
+![SENTINEL Mark II - Quest bott](https://user-images.githubusercontent.com/50608159/94999283-96761180-05e2-11eb-9a2a-eeadf874be26.png)
+![SENTINEL Mark II - Quest top](https://user-images.githubusercontent.com/50608159/94999284-97a73e80-05e2-11eb-970d-38f69aa89842.png)
+![SENTINEL Mark II - Quest](https://user-images.githubusercontent.com/50608159/94999285-983fd500-05e2-11eb-934e-2ba4db51cfc3.png)
+![SENTINEL Mark II - Quest   ](https://user-images.githubusercontent.com/50608159/94999286-98d86b80-05e2-11eb-98ab-cb08b45ddb9a.png)
