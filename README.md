@@ -13,9 +13,10 @@
 available in "Schematic" folder:
 - SENTINEL Mark II - Quest.pro (Kicad Project)
 
-### Gerber:
+### Gerber (3 board):
 - Core + Driver motor: [Here](https://www.pcbway.com/project/shareproject/SENTINEL_mark_II__QUEST___Core___motor_driver_.html)
 - Button + LCD: [Here](https://www.pcbway.com/project/shareproject/SENTINEL_mark_II__QUEST___button___eeprom___lcd_.html)
+- Sensor: [Here](https://www.pcbway.com/project/shareproject/SENTINEL_mark_II__QUEST___Sensor_.html)
 
 ### Board Preview
 ![SENTINEL Mark II - Quest  ](https://user-images.githubusercontent.com/50608159/94999278-937b2100-05e2-11eb-8e12-966e971380e2.png)
