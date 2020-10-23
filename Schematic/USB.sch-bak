@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:USB_B_Mini J?
+L SENTINEL-Mark-II---Quest-rescue:USB_B_Mini-Connector J?
 U 1 1 5F6C87FB
 P 7025 3750
 AR Path="/5F6C87FB" Ref="J?"  Part="1" 

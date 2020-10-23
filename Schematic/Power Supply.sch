@@ -303,17 +303,17 @@ F 3 "" H 6600 4750 50  0001 C CNN
 	1    6600 4750
 	1    0    0    -1  
 $EndComp
-Text Label 4100 3700 0    50   ~ 0
+Text Label 4450 3400 0    50   ~ 0
 12V
 $Comp
 L power:GND #PWR01
 U 1 1 5F621368
-P 2850 3700
-F 0 "#PWR01" H 2850 3450 50  0001 C CNN
-F 1 "GND" H 2850 3550 50  0000 C CNN
-F 2 "" H 2850 3700 50  0001 C CNN
-F 3 "" H 2850 3700 50  0001 C CNN
-	1    2850 3700
+P 3075 3700
+F 0 "#PWR01" H 3075 3450 50  0001 C CNN
+F 1 "GND" H 3075 3550 50  0000 C CNN
+F 2 "" H 3075 3700 50  0001 C CNN
+F 3 "" H 3075 3700 50  0001 C CNN
+	1    3075 3700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -344,10 +344,6 @@ Wire Wire Line
 Connection ~ 6400 3800
 Wire Wire Line
 	6400 4250 6400 4100
-Wire Wire Line
-	2850 3600 3000 3600
-Text Notes 3400 4100 0    50   ~ 0
-3A Fuse Trace:\n1.4mm width\n1oz thickness
 Wire Notes Line
 	5325 4525 3225 4525
 Wire Notes Line
@@ -430,39 +426,15 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    4450 4875
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3400 3700 3475 3700
-Wire Wire Line
-	3475 3700 3475 3825
-Wire Wire Line
-	3475 3825 3550 3825
-Wire Wire Line
-	3550 3825 3550 3575
-Wire Wire Line
-	3550 3575 3625 3575
-Wire Wire Line
-	3625 3575 3625 3825
-Wire Wire Line
-	3625 3825 3700 3825
-Wire Wire Line
-	3700 3825 3700 3575
-Wire Wire Line
-	3700 3575 3775 3575
-Wire Wire Line
-	3775 3575 3775 3825
-Wire Wire Line
-	3775 3825 3850 3825
-Wire Wire Line
-	3850 3825 3850 3700
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5F61FDC3
-P 2650 3700
-F 0 "J1" H 2568 3375 50  0000 C CNN
-F 1 "POWER" H 2568 3466 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2650 3700 50  0001 C CNN
-F 3 "~" H 2650 3700 50  0001 C CNN
-	1    2650 3700
+P 2875 3700
+F 0 "J1" H 3025 3400 50  0000 C CNN
+F 1 "POWER" H 2950 3500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2875 3700 50  0001 C CNN
+F 3 "~" H 2875 3700 50  0001 C CNN
+	1    2875 3700
 	-1   0    0    1   
 $EndComp
 Text Label 3350 4875 2    50   ~ 0
@@ -522,17 +494,37 @@ Vin
 $Comp
 L Switch:SW_SPDT S1
 U 1 1 5F6168FF
-P 3200 3600
-F 0 "S1" H 3200 3885 50  0000 C CNN
-F 1 "ON-OFF" H 3200 3794 50  0000 C CNN
-F 2 "Kicad Library:switch_slide_2.54" H 3200 3600 50  0001 C CNN
-F 3 "~" H 3200 3600 50  0001 C CNN
-	1    3200 3600
+P 4025 3600
+F 0 "S1" H 4025 3885 50  0000 C CNN
+F 1 "ON-OFF" H 4025 3794 50  0000 C CNN
+F 2 "Kicad Library:switch_slide_2.54" H 4025 3600 50  0001 C CNN
+F 3 "~" H 4025 3600 50  0001 C CNN
+	1    4025 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4825 3700 5125 3700
 Connection ~ 5125 3700
+$Comp
+L Device:Polyfuse FP1
+U 1 1 5F8379D3
+P 3475 3600
+F 0 "FP1" V 3250 3600 50  0000 C CNN
+F 1 "2A PTC fuse" V 3341 3600 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 3525 3400 50  0001 L CNN
+F 3 "~" H 3475 3600 50  0001 C CNN
+	1    3475 3600
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	3850 3700 4525 3700
+	4225 3700 4450 3700
+Wire Wire Line
+	4450 3400 4450 3700
+Connection ~ 4450 3700
+Wire Wire Line
+	4450 3700 4525 3700
+Wire Wire Line
+	3075 3600 3325 3600
+Wire Wire Line
+	3625 3600 3825 3600
 $EndSCHEMATC

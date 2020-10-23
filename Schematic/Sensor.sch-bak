@@ -22,7 +22,7 @@ AR Path="/5F78F4CE" Ref="J?"  Part="1"
 AR Path="/5F77A65B/5F78F4CE" Ref="J9"  Part="1" 
 F 0 "J9" H 2205 3842 50  0000 L CNN
 F 1 "SENSOR" H 2205 3751 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S9B-PH-K_1x09_P2.00mm_Horizontal" H 2125 3800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x09_P2.00mm_Vertical" H 2125 3800 50  0001 C CNN
 F 3 "~" H 2125 3800 50  0001 C CNN
 	1    2125 3800
 	1    0    0    1   
@@ -312,10 +312,10 @@ AR Path="/5F780A7D" Ref="J?"  Part="1"
 AR Path="/5F77A65B/5F780A7D" Ref="J6"  Part="1" 
 F 0 "J6" H 3380 3842 50  0000 L CNN
 F 1 "SENSOR" H 3380 3751 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S9B-PH-K_1x09_P2.00mm_Horizontal" H 3300 3800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x09_P2.00mm_Vertical" H 3300 3800 50  0001 C CNN
 F 3 "~" H 3300 3800 50  0001 C CNN
 	1    3300 3800
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
