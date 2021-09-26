@@ -1,10 +1,10 @@
 //encoder 22 PPR
 
 void initEncoder() {
-  pinMode(PA14, INPUT_PULLDOWN); //line 14 PA14
-  pinMode(PA15, INPUT_PULLDOWN); //line 15 PA15
-  pinMode(PB3, INPUT_PULLDOWN); //line 15 PB15
-  pinMode(PB4, INPUT_PULLDOWN); //line 14 PB14
+  pinMode(PA14, INPUT_PULLDOWN);
+  pinMode(PA15, INPUT_PULLDOWN);
+  pinMode(PB3, INPUT_PULLDOWN);
+  pinMode(PB4, INPUT_PULLDOWN);
   enc_ON();
 }
 
@@ -23,8 +23,8 @@ void enc_OFF() {
 }
 
 void enL() {
-  int8_t en1L = digitalRead(PA14); //gpio_read_bit(GPIOA, 14) ? HIGH : LOW;
-  int8_t en2L = digitalRead(PA15); //gpio_read_bit(GPIOA, 15) ? HIGH : LOW;
+  int8_t en1L = digitalRead(PA14);
+  int8_t en2L = digitalRead(PA15);
   if (en1L != last_en1L) {
     if (en2L != en1L) {
       lPos--;
@@ -37,8 +37,8 @@ void enL() {
 }
 
 void enR() {
-  int8_t en1R = digitalRead(PB3);  //gpio_read_bit(GPIOB, 15) ? HIGH : LOW;
-  int8_t en2R = digitalRead(PB4);  //gpio_read_bit(GPIOB, 14) ? HIGH : LOW;
+  int8_t en1R = digitalRead(PB3);
+  int8_t en2R = digitalRead(PB4);
   if (en1R != last_en1R) {
     if (en2R != en1R) {
       rPos--;

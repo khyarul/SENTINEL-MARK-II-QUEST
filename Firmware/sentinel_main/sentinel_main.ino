@@ -242,11 +242,13 @@ void setup() {
         ee.Va[i] = 0;
         ee.Ta[i] = 0;
       }
-      ee.kp[0] = 10;   //14, 19, 27
-      ee.kd[0] = 20;  //130, 140, 155
+      //      ee.kp[] = {10, 13, 20};
+      //      ee.kd[] = {20, 25, 50};
+      ee.kp[0] = 10;
       ee.kp[1] = 13;
-      ee.kd[1] = 25;
       ee.kp[2] = 20;
+      ee.kd[0] = 20;
+      ee.kd[1] = 25;
       ee.kd[2] = 50;
       ee.PID = 2;
       ee.V = 40;
@@ -385,11 +387,10 @@ void loop() {
         }
         setMotor(0, 0);
         lastError = 0;
-        //        switch (ee.ACTION[plan][x]) {
-        //          case BLK: line = BLK; break;
-        //          case WHT: line = WHT; break;
-        //        }
-        line = ee.ACTION[plan][x];
+
+        if (ee.ACTION[plan][x] < 2) {   //Ubah warna garis, jika ACTION: BLK atau WHT
+          line = ee.ACTION[plan][x];
+        }
 
         if (ee.COUNTA[plan][x] > 0) {
           led_ON;
@@ -482,7 +483,7 @@ void loop() {
           }
 
           if (ee.COUNTB[plan][x] > 0) {
-            switch (ee.COUNTERAMODE[plan][x]) {
+            switch (ee.COUNTERBMODE[plan][x]) {
               case TIMER:
                 count_now = millis();
                 if (ee.FOLLOWMODE[plan][x] == FLR) {

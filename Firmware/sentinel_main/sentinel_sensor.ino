@@ -49,26 +49,7 @@ uint16_t readSensor() {
       bitClear(bitSensor, 13 - i);
     }
   }
-  //  else if (line == WHT) {
-  //    for (int8_t i = 0; i <= 6; i++) {
-  //      switchSensor(i);
-  //      delayMicroseconds(20);
-  //      arraySensor[i] = analogRead(sensorR);//adcSensor[0];
-  //      if (arraySensor[i] > ee.sensorRef[i]) {
-  //        bitClear(bitSensor, i);
-  //      }
-  //      else {
-  //        bitSet(bitSensor, i);//bitSensor = bitSensor | (0b00000000000001 << i);
-  //      }
-  //      arraySensor[13 - i] = analogRead(sensorL);//adcSensor[1];
-  //      if (arraySensor[13 - i] > ee.sensorRef[13 - i]) {
-  //        bitClear(bitSensor, 13 - i);
-  //      }
-  //      else {
-  //        bitSet(bitSensor, 13 - i); //bitSensor = bitSensor | (0b00000000000001 << (13 - i));
-  //      }
-  //    }
-  //  }
+
   if (line == WHT) {
     bitSensor = ~bitSensor;
   }
@@ -151,8 +132,8 @@ void readSensorAdc() {
   for (int8_t i = 0; i <= 6; i++) {
     switchSensor(i);
     delayMicroseconds(20);
-    arraySensor[i] = analogRead(sensorR);//adcSensor[0];
-    arraySensor[13 - i] = analogRead(sensorL);//adcSensor[1];
+    arraySensor[i] = analogRead(sensorR);
+    arraySensor[13 - i] = analogRead(sensorL);
   }
 }
 
